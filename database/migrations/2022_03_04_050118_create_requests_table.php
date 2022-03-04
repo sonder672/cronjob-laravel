@@ -15,7 +15,7 @@ class CreateRequestsTable extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->id('registration_id');
-            $table->timestamp('date_now');
+            $table->timestamps();
         });
     }
 
