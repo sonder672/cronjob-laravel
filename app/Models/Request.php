@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Request extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'updated_at',
+        'created_at'
+    ];
 }

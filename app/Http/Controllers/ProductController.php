@@ -34,8 +34,8 @@ class ProductController extends Controller
         $proxyPattern = new ProxyPattern(new ProductService($repository));
         $proxyPattern->__invoke($productDto);
 
-        /* return response()->json(['success']); */
-        return redirect()->route('home');
+        return response()->json(['success']); 
+        /* return redirect()->route('home'); */
     }
 
     private function validateData($request)
