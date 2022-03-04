@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name_product', 100);
             $table->text('description');
             $table->integer('state');
+            $table->float('price');
             $table->timestamp('publication_date');
         });
     }
