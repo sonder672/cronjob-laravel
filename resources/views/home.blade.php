@@ -44,7 +44,7 @@
                                             <tr>
                                                 <td>{{ $product->product_id }}</td>
                                                 <td></td>
-                                                <td>{{ $product->name_product }}</td>
+                                                <td onclick="return confirmAction()">{{ $product->name_product }}</td>
                                                 <td>{{ $product->price }}</td>
                                                 @if ($product->state == 1)
                                                     <td>Publicado</td>
@@ -88,4 +88,9 @@
         perPage:4,
         perPageSelect:[4, 8]
     });
+
+    function confirmAction()
+    {
+        alert("Acaba de dar clic sobre el nombre");
+    }
 </script>
